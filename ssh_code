@@ -1,5 +1,6 @@
 sudo apt-get update
 sudo apt-get upgrade
+cd /usr/local/src
 sudo wget https://dl.ui.com/unifi/5.12.35/unifi_sysvinit_all.deb
 sudo dpkg -i unifi_sysvinit_all.deb
 sudo apt-get install -f
