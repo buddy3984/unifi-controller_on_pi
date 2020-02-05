@@ -1,0 +1,11 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo wget https://dl.ui.com/unifi/5.12.35/unifi_sysvinit_all.deb
+sudo dpkg -i unifi_sysvinit_all.deb
+sudo apt-get install -f
+sudo apt-get install openjdk-8-jre
+
+echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-armhf" | sudo tee -a /etc/default/unifi
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-armhf
+
+sudo service unifi status
