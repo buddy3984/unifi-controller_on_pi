@@ -9,4 +9,9 @@ sudo apt-get install openjdk-8-jre
 echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-armhf" | sudo tee -a /etc/default/unifi
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-armhf
 
+or
+
+wget "https://github.com/SmokingCrop/UniFi/raw/master/install-unifi-pihole-English.sh" -O install-unifi-pihole.sh && chmod +x install-unifi-pihole.sh && ./install-unifi-pihole.sh no-pihole
+
+
 sudo service unifi status
